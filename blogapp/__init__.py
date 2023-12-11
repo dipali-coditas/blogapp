@@ -14,7 +14,7 @@ db = SQLAlchemy()
 app = Flask(__name__,template_folder='template')
 if(local_server==True):
     #Replace the ip_address and cloud instance and db name accordingly.
-    app.config["SQLALCHEMY_DATABASE_URI"]= "mysql+mysqldb://dipali:12345@10.102.112.3:3306/flaskdb?unix_socket=/cloudsql/iron-verbena-403909:asia-south1:flaskdb"
+    app.config["SQLALCHEMY_DATABASE_URI"]= "mysql+mysqldb://dipali:12345@10.102.112.3:3306/flaskdb"
 
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=True
 else:
